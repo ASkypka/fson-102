@@ -1,15 +1,18 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 button {
   cursor: pointer;
 }
+
 h1,
 h2,
 h3,
@@ -19,19 +22,73 @@ h6,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
 }
+
+/* #region:Benefits */
+.benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1e1823;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 88px;
+}
+
+.benefits-item {
+  width: calc((100% - 88px * 2) / 3);
+}
+
+.benefits-title {
+  color: var(--white, #FFF);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  /* letter-spacing: 0.01em; */
+  margin-bottom: 18px;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+
+/* #endregion:Benefits */
+
+/* Ingridients */
 .ingridients-section {
   padding: 120px 0 60px 0;
 }
+
 .ingridients-title {
   margin-bottom: 50px;
   color: #111;
@@ -42,26 +99,32 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+
 .title-color {
   color: #fd9222;
 }
+
 .ingridients-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
+
 .ingridients-item {
   width: calc((100% - 32px * 3) / 4);
   border-radius: 15px;
 }
+
 .ingridients-item:nth-child(4n + 1) {
   background-color: #fd9222;
   color: #fff;
 }
+
 .ingridients-item:nth-child(2n) {
   border: 1px solid #fd9222;
   color: black;
 }
+
 .ingridients-item:nth-child(4n + 3) {
   background-color: #1e1823;
   color: #fff;
@@ -70,6 +133,7 @@ img {
 .container-ingr {
   padding: 28px 23px;
 }
+
 .ing-subtitle {
   margin-top: 36px;
   font-size: 14px;
